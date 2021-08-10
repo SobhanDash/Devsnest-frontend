@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  text-align: center;
+}
+
+body {
+  display: flex;
+  align-items: center;
+}
+
+.clock {
+  width: 30rem;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6rem auto;
+  padding: 2rem;
+  position: relative;
+  border: 20px solid rgb(122, 228, 219);
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 2px 5px rgb(155, 154, 154);
+}
+
+.face {
+  position: relative;
+  transform: translateY(-6px);
+  width: 100%;
+  height: 100%;
+}
+
+.hand {
+  width: 50%;
+  height: 6px;
+  background-color: rgb(17, 16, 16);
+  position: absolute;
+  top: 50%;
+  transition: all 0.05s;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition-timing-function: ease-in-out;
+}
