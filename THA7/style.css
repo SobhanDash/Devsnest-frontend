@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.frame {
+  background: #4731b1;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  margin-top: -200px;
+  margin-left: -200px;
+  box-shadow: 5px 5px 8px 4px rgba(0, 0, 0, 0.534);
+  overflow: hidden;
+}
+
+.pixel {
+  float: left;
+}
+.pixel input {
+  display: none;
+}
+.pixel label {
+  width: 20px;
+  height: 20px;
+  display: block;
+  cursor: pointer;
+  border: 1px solid rgba(235, 234, 238, 0.15);
+}
+.pixel label:hover {
+  background: #442ac7;
+}
+.pixel input:checked ~ label {
+  background: #e1e1e1;
+  border-color: rgba(235, 234, 238, 0.15);
+}
+.pixel input:checked ~ label:hover {
+  background: #d6d4d4;
+}
+/* #6234bf */
