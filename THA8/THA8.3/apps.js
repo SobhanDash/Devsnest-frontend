@@ -19,7 +19,6 @@ for (let i = 0; i < number; i++) {
   box.appendChild(seats.cloneNode(true));
 }
 
-console.log(document);
 //event listener
 document.addEventListener("click", (e) => {
   //if the targets are seats
