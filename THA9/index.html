@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Memory Game</title>
+  </head>
+  <body>
+    <section>
+      <div class="title"><h1>Neo Memory Games</h1></div>
+
+      <div id="start" class="overlay-text visible">Click to Play</div>
+
+      <div id="game-over" class="overlay-text">
+        Game Over! <span id="restart">Click to Restart</span>
+      </div>
+
+      <div id="constraints">
+        <h2>Matches: <span id="match">0</span></h2>
+        <h2>Flips Remaining: <span id="flip-remaining">0</span></h2>
+      </div>
+
+      <div class="memory-container">
+        <div class="card" data-company="microsoft">
+          <div class="front">
+            <img src="./Logo-main.png" alt="front-icon" />
+          </div>
+          <span class="back">
+            <i class="fab fa-microsoft"></i>
+          </span>
+        </div>
+
+        <div class="card" data-company="microsoft">
+          <div class="front">
+            <img src="./Logo-main.png" alt="front-icon" />
+          </div>
+          <span class="back">
+            <i class="fab fa-microsoft"></i>
+          </span>
+        </div>
+
+        <div class="card" data-company="facebook">
+          <div class="front">
+            <img src="./Logo-main.png" alt="front-icon" />
+          </div>
+          <span class="back">
+            <i class="fab fa-facebook-f"></i>
+          </span>
+        </div>
+
+        <div class="card" data-company="facebook">
+          <div class="front">
+            <img src="./Logo-main.png" alt="front-icon" />
+          </div>
+          <span class="back">
+            <i class="fab fa-facebook-f"></i>
+          </span>
+        </div>
+
+        <div class="card" data-company="discord">
+          <div class="front">
+            <img src="./Logo-main.png" alt="front-icon" />
+          </div>
+          <span class="back">
+            <i class="fab fa-discord"></i>
+          </span>
+        </div>
+
+        <div class="card" data-company="discord">
+          <div class="front">
+            <img src="./Logo-main.png" alt="front-icon" />
+          </div>
+          <span class="back">
+            <i class="fab fa-discord"></i>
+          </span>
+        </div>
+
+        <div class="card" data-company="google">
+          <div class="front">
+            <img src="./Logo-main.png" alt="front-icon" />
+          </div>
+          <span class="back">
+            <i class="fab fa-google"></i>
+          </span>
+        </div>
+
+        <div class="card" data-company="google">
+          <div class="front">
+            <img src="./Logo-main.png" alt="front-icon" />
+          </div>
+          <span class="back">
+            <i class="fab fa-google"></i>
+          </span>
+        </div>
+
+        <div class="card" data-company="amazon">
+          <div class="front">
+            <img src="./Logo-main.png" alt="front-icon" />
+          </div>
+          <span class="back">
+            <i class="fab fa-amazon"></i>
+          </span>
+        </div>
+
+        <div class="card" data-company="amazon">
+          <div class="front">
+            <img src="./Logo-main.png" alt="front-icon" />
+          </div>
+          <span class="back">
+            <i class="fab fa-amazon"></i>
+          </span>
+        </div>
+
+        <div class="card" data-company="apple">
+          <div class="front">
+            <img src="./Logo-main.png" alt="front-icon" />
+          </div>
+          <span class="back">
+            <i class="fab fa-apple"></i>
+          </span>
+        </div>
+
+        <div class="card" data-company="apple">
+          <div class="front">
+            <img src="./Logo-main.png" alt="front-icon" />
+          </div>
+          <span class="back">
+            <i class="fab fa-apple"></i>
+          </span>
+        </div>
+      </div>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>

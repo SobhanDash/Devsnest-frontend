@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Shadows+Into+Light&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(18, 105, 177, 0.849);
+  font-family: "Shadows Into Light", cursive;
+  color: #362e2e;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+}
+
+.overlay-text {
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  user-select: none;
+  font-size: 56px;
+  font-family: 'Patrick Hand', cursive;
+  color: #362e2e;
+  text-shadow: rgb(255, 38, 0) 1px 0 10px;
+}
+
+#start,
+#restart {
+  cursor: pointer;
+}
+
+.overlay-text.visible {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.memory-container {
+  width: 640px;
+  height: 640px;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+#constraints {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  width: calc(25% - 10px);
+  height: calc(33.33% - 10px);
+  margin: 5px;
+  translate: scale(1);
+  transform-style: preserve-3d;
+  transition: 0.5s;
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+}
+
+.card.flip .back {
+  position: absolute;
+  transform: rotateY(180deg);
+}
+
+.card:active {
+  transform: scale(0.95);
+  transition: 0.5s;
+}
+
+.front {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  background: url("./back-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 93% 90%;
+  font-size: 6em;
+  color: #e1e1e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 10px;
+  backface-visibility: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+i {
+  margin-bottom: 13px;
+  margin-right: 6px;
+}
