@@ -1,0 +1,147 @@
+:root {
+  --primary: #8347b5;
+  --secondary: #242553;
+  --white: #fcfcfc;
+  --grey-1: #ada8ac;
+  --grey-2: #504a53;
+  --shadow: #131118;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 18rem;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0;
+  border-radius: 1rem;
+  background: linear-gradient(var(--primary), var(--secondary));
+  box-shadow: 1px 4px 10px 0px var(--shadow);
+}
+
+.grid-container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas:
+    "display display display display"
+    "display display display display"
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . equate equate";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin: 6px;
+  gap: 6px 6px;
+}
+
+.display {
+  grid-area: display;
+}
+
+.equate {
+  grid-area: equate;
+}
+
+/* Design */
+.display,
+.btn,
+.equate,
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-text {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  text-align: end;
+  padding: 2rem;
+  font-size: 2.5rem;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.inner-button {
+  font-size: 1.4rem;
+  color: var(--grey-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 600;
+}
+
+.inner-button:active {
+  background: var(--grey-2);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: 0.03s ease-in-out;
+}
+
+.equate .inner-button {
+  width: 141.5px;
+  height: 20px;
+  background: var(--primary);
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  padding: 1.1rem;
+  margin: 10px 0;
+  color: var(--white);
+  box-shadow: -2px 3px 5px 0 var(--shadow);
+}
+
+.equate .inner-button:active {
+  width: 20px;
+  height: 20px;
+  border-radius: 80%;
+  background: var(--primary);
+  transition: 0.08s ease-in-out;
+}
+
+.symbols {
+  color: var(--white);
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+
+.bar {
+  background-color: var(--grey-1);
+  width: 150px;
+  height: 5px;
+  border-radius: 10rem;
+  margin-bottom: -3rem;
+}
