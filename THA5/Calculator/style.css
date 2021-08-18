@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
 :root {
   --primary: #8347b5;
   --secondary: #242553;
@@ -25,6 +27,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Patrick Hand", cursive;
 }
 
 .form {
@@ -129,7 +132,7 @@ input[type="number"]::-webkit-outer-spin-button {
   height: 20px;
   border-radius: 80%;
   background: var(--primary);
-  transition: 0.08s ease-in-out;
+  transition: 0.04s ease-in-out;
 }
 
 .symbols {
