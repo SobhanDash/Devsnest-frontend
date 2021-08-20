@@ -1,0 +1,130 @@
+:root {
+  --primary: #1b9aaaff;
+  --light-primary: #62bec1ff;
+  --secondary: #434371ff;
+  --black: #484041ff;
+  --grey: #d9d0deff;
+  --correct: #b8fd82;
+  --wrong: #fec6c6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin-bottom: 3rem;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.title {
+  font-size: 3rem;
+  margin-left: -4rem;
+  color: var(--grey);
+  margin: 10px;
+}
+
+.resultBtn {
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: none;
+  outline: none;
+  box-shadow: 3px 3px 2px 0 var(--light-primary);
+  font-size: 1rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.resultBtn:active {
+  transform: scale(0.95);
+  box-shadow: 3px 3px 2px 0 var(--primary);
+  transition: 0.05s ease-in-out;
+}
+
+.resultBtn:hover {
+  color: var(--black);
+  opacity: 0.95;
+  box-shadow: -3px -3px 2px 0 var(--primary);
+  transition: 0.05s ease-in-out;
+}
+
+.quiz-container {
+  width: 90%;
+  display: flex;
+  margin: 20px 0;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+  box-shadow: 2px 3px 5px 2px var(--light-primary);
+  background: var(--secondary);
+  color: var(--grey);
+  font-size: 2rem;
+}
+
+.question {
+  margin: 20px;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.op {
+  min-width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.options button {
+  margin: 20px;
+  height: 50px;
+  padding: 1rem 1rem;
+  border-radius: 0.2rem;
+  border: none;
+  outline: none;
+  box-shadow: 3px 3px 2px 0 var(--light-primary);
+  color: var(--black);
+  cursor: pointer;
+  opacity: 1;
+  font-size: 1rem;
+}
+
+.options button:hover {
+  opacity: 0.8;
+  box-shadow: 3px 3px 2px 0 var(--primary);
+}
+
+.correct {
+  background: var(--correct);
+  transition: 0.05s ease-in;
+}
+
+.wrong {
+  background: var(--wrong);
+  transition: 0.05s ease-in;
+}
+
+@media screen and (max-width: 1000px) {
+  .op {
+    flex-wrap: wrap;
+    min-width: 80%;
+  }
+}
