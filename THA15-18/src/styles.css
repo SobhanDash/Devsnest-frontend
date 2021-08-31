@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  background: bisque;
+}
+
+.board,
+.board2 {
+  width: 222px;
+  height: 222px;
+  border: 10px solid black;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  background: white;
+  box-shadow: 4px 6px 8px 0 rgb(185, 133, 69);
+}
+
+.board .cell,
+.board2 .box {
+  width: 25px;
+  height: 25px;
+  float: left;
+}
+
+.board div:nth-child(16n + 16),
+.board div:nth-child(16n + 14),
+.board div:nth-child(16n + 12),
+.board div:nth-child(16n + 10),
+.board div:nth-child(16n + 7),
+.board div:nth-child(16n + 5),
+.board div:nth-child(16n + 3),
+.board div:nth-child(16n + 1) {
+  background-color: black;
+}
+
+.chessboards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
