@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Satisfy", cursive;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  position: relative;
+  margin-top: 5rem;
+}
+
+.container {
+  width: 80%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: rgba(0, 225, 255, 0.877);
+  border-radius: 20px;
+  color: rgb(64, 66, 226);
+  box-shadow: 3px 3px 5px 0 rgb(70, 226, 96);
+  padding: 1rem;
+  text-align: center;
+}
+
+.generate {
+  padding: 0.5rem;
+  background-color: rgba(0, 225, 255, 0.877);
+  color: rgb(64, 66, 226);
+  outline: none;
+  border: none;
+  box-shadow: -3px 3px 5px 0 rgb(70, 226, 96);
+  font-size: 22px;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.generate:hover {
+  background-color: rgba(81, 221, 240, 0.979);
+  transform: scale(0.95);
+  transition: 0.05s all ease-in-out;
+  box-shadow: -4px 5px 5px 0 rgb(70, 226, 96);
+}
+
+.qr,
+.ql {
+  font-size: 64px;
+  color: rgb(64, 67, 226);
+  position: absolute;
+}
+
+.ql {
+  top: -3rem;
+  left: 2rem;
+}
+
+.qr {
+  right: 2rem;
+  bottom: 2rem;
+}
